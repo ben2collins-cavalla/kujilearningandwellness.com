@@ -1,0 +1,14 @@
+  <div class="testimonial_bundle  card">
+        <div class="testimonial">
+            {% if true in content.field_testimonial_field_image[0] %}
+                <div class="avatar">
+                     <div class="pic" style="background-image: url('{{content.field_testimonial_field_image[0]}}')">&nbsp;</div>
+                </div>
+            {% endif %}
+            <center>
+                <p class="quote lead text-center">{{-content.field_testimonial_field_quote[0]-}}</p>
+                <strong class="cite">{{-content.field_testimonial_field_name[0]-}}</strong></br>
+                <small>{{-content.field_testimonial_field_job[0]-}}</small>
+            </center>
+        </div>
+    </div>

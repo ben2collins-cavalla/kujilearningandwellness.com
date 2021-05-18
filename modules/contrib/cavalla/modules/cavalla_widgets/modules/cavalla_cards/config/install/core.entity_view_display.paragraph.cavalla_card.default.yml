@@ -1,0 +1,61 @@
+uuid: fe3eb328-e93a-4ef6-a93e-dd182da65e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cavalla_card.field_card_animation
+    - field.field.paragraph.cavalla_card.field_card_field
+    - field.field.paragraph.cavalla_card.field_card_introduction
+    - field.field.paragraph.cavalla_card.field_card_link
+    - paragraphs.paragraphs_type.cavalla_card
+  module:
+    - entity_reference_revisions
+    - link
+_core:
+  default_config_hash: DUAH-CGrTzRzVnNoM2Gh6dRsu-krmtQdpfxIqVAE7Ns
+id: paragraph.cavalla_card.default
+targetEntityType: paragraph
+bundle: cavalla_card
+mode: default
+content:
+  field_card_animation:
+    weight: 8
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_card_field:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_card_introduction:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_card_link:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

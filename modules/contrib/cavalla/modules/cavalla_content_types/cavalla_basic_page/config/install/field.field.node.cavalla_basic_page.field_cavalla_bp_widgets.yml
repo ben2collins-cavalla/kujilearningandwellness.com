@@ -1,0 +1,65 @@
+uuid: 5ce83e1f-33ef-420c-b6bd-5e28d9d7239a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cavalla_bp_widgets
+    - node.type.cavalla_basic_page
+    - paragraphs.paragraphs_type.cavalla_call_to_action
+    - paragraphs.paragraphs_type.cavalla_card
+    - paragraphs.paragraphs_type.cavalla_featurette
+    - paragraphs.paragraphs_type.cavalla_testimonials
+    - paragraphs.paragraphs_type.cavalla_webform
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: o-34ffdKNNR7l4Ln-2kCiGX4_Wbmqc0G85fx1euByjU
+id: node.cavalla_basic_page.field_cavalla_bp_widgets
+field_name: field_cavalla_bp_widgets
+entity_type: node
+bundle: cavalla_basic_page
+label: Widgets
+description: 'This content type creates basic pages for the Cavalla Theme'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cavalla_call_to_action: cavalla_call_to_action
+      cavalla_card: cavalla_card
+      cavalla_featurette: cavalla_featurette
+      cavalla_testimonials: cavalla_testimonials
+      cavalla_webform: cavalla_webform
+    target_bundles_drag_drop:
+      cavalla_call_to_action:
+        enabled: true
+        weight: 9
+      cavalla_card:
+        enabled: true
+        weight: 10
+      cavalla_card_field:
+        weight: 11
+        enabled: false
+      cavalla_card_introduction:
+        weight: 12
+        enabled: false
+      cavalla_card_link:
+        weight: 13
+        enabled: false
+      cavalla_featurette:
+        enabled: true
+        weight: 14
+      cavalla_testimonials:
+        enabled: true
+        weight: 15
+      cavalla_testimonials_field:
+        weight: 16
+        enabled: false
+      cavalla_webform:
+        weight: 17
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,20 @@
+uuid: 9e5b3721-1e99-4bb5-bd0b-330af7aa2ab1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: V8fWECU1faA3vNPsDS_tZxiUfSCvXQ1RkT5HDYV049U
+name: 'Cavalla Basic Page'
+type: cavalla_basic_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

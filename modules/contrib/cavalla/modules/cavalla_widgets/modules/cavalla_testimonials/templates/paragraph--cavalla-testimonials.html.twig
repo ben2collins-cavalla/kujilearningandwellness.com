@@ -1,0 +1,22 @@
+
+	<section class="testimonials_bundle animation_testimonial_{{-content.field_testimonial_animation[0]-}}" >
+		  <div class="container animation_testimonial_{{-content.field_testimonial_animation[0]-}}">
+			  
+			<section class="text-center">
+				{%  if true in content.field_testimonial_header[0] %}
+				<h1>{{-content.field_testimonial_header[0]-}}</h1>
+				{% endif %}
+
+				{%  if true in content.field_testimonial_text[0] %}
+				<p class="lead">{{-content.field_testimonial_text[0]-}}</p>
+				{% endif %}
+			</section>  
+			<section class="card-deck">
+				{% for i in 0..content.field_testimonial_widget|length %}	
+					{% if content.field_testimonial_widget[i] is not null %} 
+						{{-content.field_testimonial_widget[i]-}}
+					{% endif %}
+				{% endfor %}
+			</section>
+		  </div>
+	 </section>

@@ -1,0 +1,8 @@
+<section class="text-center">
+        {%  if true in content.field_card_introduction_header[0] %}
+        <h1>{{-content.field_card_introduction_header[0]-}}</h1>
+        {% endif %}
+        {%  if true in content.field_card_introduction_subtext[0] %}
+          <p class="lead">{{-content.field_card_introduction_subtext[0]-}}</p>
+        {% endif %}
+</section> 

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: cavalla_call_to_action
+label: 'Call to Action'
+icon_uuid: null
+description: "A full background Call to Action section that uses either images and videos.\t\r\n"
+behavior_plugins: {  }

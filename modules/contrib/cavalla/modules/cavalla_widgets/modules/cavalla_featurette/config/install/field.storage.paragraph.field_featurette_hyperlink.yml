@@ -1,0 +1,21 @@
+uuid: 1d5d486b-0d6c-4948-8c0a-ecf9003e16b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: duhCQJrwOQ7XWE-74XT_h5uKwpyDRCHD7-KEKReECDI
+id: paragraph.field_featurette_hyperlink
+field_name: field_featurette_hyperlink
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

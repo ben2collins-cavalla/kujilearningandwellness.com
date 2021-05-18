@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cavalla_blog_recent_post.field_cavalla_blog_recent_post
+    - paragraphs.paragraphs_type.cavalla_blog_recent_post
+  module:
+    - viewfield
+id: paragraph.cavalla_blog_recent_post.default
+targetEntityType: paragraph
+bundle: cavalla_blog_recent_post
+mode: default
+content:
+  field_cavalla_blog_recent_post:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,63 @@
+
+
+{% set float_left %}
+	{{-content.field_featurette_image_alignment[0]-}}
+{% endset %}
+
+
+
+
+<section class="w-100 d-md-table" >
+	<section class="featurettes d-md-table-cell align-middle">
+
+		<section class="container animation_featurettes_{{-content.field_featurettes_animation[0]-}}">
+		  <div class="row h-100 ">
+		   {%  if float_left == 'On'%}
+		   	<div class="col-lg-6 col-md-6 featurettes_text my-auto d-md-table-cell align-middle">
+			  <aside class="featurette text-center text-md-left">
+				  
+            {%  if true in content.field_featurette_header[0] %}
+            <h1 class="featurette-heading">{{-content.field_featurette_header[0]-}}</h1>
+            {% endif %}          
+            
+            {%  if true in content.field_featurette_subtext[0] %}
+            <p class="lead">{{-content.field_featurette_subtext[0]-}}</p>
+            {% endif %}
+
+          {%  if true in content.field_featurette_hyperlink[0] %}
+					<a class="btn btn-dark" href="{% spaceless %}{{-content.field_featurette_hyperlink[0]['#url']-}}
+          {% endspaceless %}">{{-content.field_featurette_hyperlink[0]['#title']-}}&nbsp;<i class="fa fa-arrow-circle-right"></i></a>
+          {% endif %}
+          
+			   </aside>
+			</div>
+		   	<div class="col-lg-6 col-md-6 featurettes_image p-3 d-md-table-cell align-middle">
+            {{-content.field_featurette_image[0]-}}
+			</div>
+		   {% endif %}
+
+			{%  if float_left == 'Off'%}
+			 <div class="col-lg-6 col-md-6 featurettes_image p-3">
+          {{-content.field_featurette_image[0]-}}
+			</div>
+			 <div class="col-lg-6 col-md-6 featurettes_text my-auto ">
+				  <aside class="featurette text-center text-md-left">
+            {%  if true in content.field_featurette_header[0] %}
+            <h1 class="featurette-heading">{{-content.field_featurette_header[0]-}}</h1>
+            {% endif %}
+
+            {%  if true in content.field_featurette_subtext[0] %}
+            <p class="lead">{{-content.field_featurette_subtext[0]-}}</p>
+            {% endif %}
+
+            {%  if true in content.field_featurette_hyperlink[0] %}
+            <a class="btn btn-dark" href="{% spaceless %}{{-content.field_featurette_hyperlink[0]['#url']-}}
+            {% endspaceless %}">{{-content.field_featurette_hyperlink[0]['#title']-}}&nbsp;<i class="fa fa-arrow-circle-right"></i></a>
+            {% endif %}
+				 </aside>
+			 </div>
+		   {% endif %}
+		  </div>
+		</section>
+	</section>
+</section>

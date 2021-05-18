@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cavalla_call_of_action_sb
+    - paragraphs.paragraphs_type.cavalla_call_to_action
+  module:
+    - options
+id: paragraph.cavalla_call_to_action.field_cavalla_call_of_action_sb
+field_name: field_cavalla_call_of_action_sb
+entity_type: paragraph
+bundle: cavalla_call_to_action
+label: 'Sky Moving Display'
+description: "The Following options will add moving cloud animations\r\nbehind an image. For the best possible display use a png image."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

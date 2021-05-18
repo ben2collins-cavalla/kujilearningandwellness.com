@@ -1,0 +1,114 @@
+uuid: bf4aa5cd-a560-444e-8b86-e6afd5f8d432
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cavalla_featurette.field_featurette_header
+    - field.field.paragraph.cavalla_featurette.field_featurette_hyperlink
+    - field.field.paragraph.cavalla_featurette.field_featurette_image
+    - field.field.paragraph.cavalla_featurette.field_featurette_image_alignment
+    - field.field.paragraph.cavalla_featurette.field_featurette_subtext
+    - field.field.paragraph.cavalla_featurette.field_featurettes_animation
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.cavalla_featurette
+  module:
+    - field_group
+    - image
+    - link
+third_party_settings:
+  field_group:
+    group_featurettes_introduction:
+      children:
+        - field_featurette_header
+        - field_featurette_subtext
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        label: Introduction
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Introduction
+    group_featurettes_image:
+      children:
+        - field_featurette_image
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Image
+    group_featurettes_hyperlink:
+      children:
+        - field_featurette_hyperlink
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        label: Hyperlink
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Hyperlink
+_core:
+  default_config_hash: D2lCdTIZfjVgmAqLT5yzE_AVqkYyaT76OqoqR78GKCc
+id: paragraph.cavalla_featurette.default
+targetEntityType: paragraph
+bundle: cavalla_featurette
+mode: default
+content:
+  field_featurette_header:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_featurette_hyperlink:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_featurette_image:
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_featurette_image_alignment:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_featurette_subtext:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_featurettes_animation:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true

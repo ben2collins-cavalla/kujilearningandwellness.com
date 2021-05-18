@@ -1,0 +1,27 @@
+
+
+    <section id="card_bundle" data-animate-card="{{-content.field_card_animation[0]-}}">
+        <section class="card_bundle py-5">
+            <section class="container">
+                {%  if true in content.field_card_introduction[0]  %} 
+                    {{-content.field_card_introduction[0]-}}
+                {% endif %}
+              
+              <section class="card-deck mb-4">
+                  {% for i in 0..content.field_card_field|length %}
+                  {% if content.field_card_field[i] is not null %} 
+                    {{-content.field_card_field[i]-}}
+                  {% endif %}
+                {% endfor %}
+            </section>
+            <center>
+            {% for i in 0..content.field_card_link|length %}
+                {% if content.field_card_link[i] is not null %} 
+                <a class="btn btn-dark" href="{% spaceless %}{{-content.field_card_link[i]['#url']-}}
+                {% endspaceless %}">{{-content.field_card_link[i]['#title']-}}&nbsp;<i class="fa fa-arrow-circle-right"></i></a>
+                {% endif %}
+            {% endfor %}
+          </center>
+          </section>
+        </section>
+    </section>

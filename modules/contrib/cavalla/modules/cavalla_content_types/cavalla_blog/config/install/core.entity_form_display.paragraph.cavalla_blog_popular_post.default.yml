@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cavalla_blog_popular_post.field_cavalla_blog_popular_post
+    - paragraphs.paragraphs_type.cavalla_blog_popular_post
+  module:
+    - viewfield
+id: paragraph.cavalla_blog_popular_post.default
+targetEntityType: paragraph
+bundle: cavalla_blog_popular_post
+mode: default
+content:
+  field_cavalla_blog_popular_post:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+hidden:
+  created: true
+  status: true
